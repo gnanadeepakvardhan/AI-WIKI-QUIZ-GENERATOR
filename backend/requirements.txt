@@ -1,0 +1,10 @@
+fastapi==0.95.2
+uvicorn[standard]==0.22.0
+sqlalchemy==1.4.52
+alembic==1.11.1
+requests==2.31.0
+beautifulsoup4==4.12.2
+pydantic==1.10.12
+python-dotenv==1.0.0
+langchain==0.0.335
+langchain-google-genai==0.0.11

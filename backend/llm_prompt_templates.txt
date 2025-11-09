@@ -1,0 +1,15 @@
+QUIZ_PROMPT_TEMPLATE
+-------------------
+Use this template for grounding the LLM in the provided article text. Make sure to include strict JSON output instructions and ask the model to only use information present in the article.
+
+Template:
+"""
+You are an expert quiz writer. Here is the article title: {{title}} and the article text:
+{{article_text}}
+
+Instructions:
+- Generate 5-10 multiple choice questions grounded in the article text.
+- For each question include: question, options (4), answer (the correct option text), explanation, difficulty (easy/medium/hard).
+- Provide a short summary (1-2 sentences) and 3-6 related Wikipedia topics for further reading.
+- Output strictly valid JSON matching the schema.
+"""
