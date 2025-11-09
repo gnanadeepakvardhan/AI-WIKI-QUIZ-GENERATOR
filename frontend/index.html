@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Wiki Quiz Generator</title>
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>AI Wiki Quiz Generator</h1>
+
+    <div class="tabs">
+      <button id="tab-generate" class="active">Generate Quiz</button>
+      <button id="tab-history">Past Quizzes</button>
+    </div>
+
+    <div id="panel-generate" class="panel">
+      <label for="url-input">Wikipedia Article URL</label>
+      <input type="text" id="url-input" placeholder="https://en.wikipedia.org/wiki/Alan_Turing">
+      <button id="generate-btn">Generate Quiz</button>
+      <div id="generate-result"></div>
+    </div>
+
+    <div id="panel-history" class="panel hidden">
+      <table id="history-table">
+        <thead>
+          <tr><th>ID</th><th>Title</th><th>URL</th><th>Actions</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ✅ Modal -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="modal-close">Close</button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
