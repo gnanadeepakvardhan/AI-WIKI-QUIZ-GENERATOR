@@ -4,7 +4,7 @@ This project is a minimal end-to-end implementation of the assignment: it includ
 
 Quick start (Windows, cmd.exe):
 
-1. Backend virtual env and install
+1. Backend virtual env and install...
 
 ```
 cd backend
@@ -44,3 +44,4 @@ What I implemented beyond the assignment minimum:
 Next steps / improvements you can enable:
 - Wire LangChain + Gemini/OpenAI for higher-quality quiz generation (see prompt in `llm_quiz_generator.py`).
 - Add unit tests and CI, add optional "Take Quiz" mode to the frontend.
+
